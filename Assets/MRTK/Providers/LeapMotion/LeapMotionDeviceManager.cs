@@ -140,6 +140,12 @@ namespace Microsoft.MixedReality.Toolkit.LeapMotion.Input
 
                 // Apply hand position offset, an offset is required to render the hands in view and in front of the camera
                 LeapMotionServiceProvider.transform.position += leapHandsOffset;
+
+                // Add optional visualization for device
+                if (SettingsProfile.VisualizationPrefab != null)
+                {
+                    GameObject.Instantiate(SettingsProfile.VisualizationPrefab, leapProvider.transform);
+                }
             }
 
             // Add the attachment hands to the scene for the purpose of getting the tracking state of each hand and joint positions

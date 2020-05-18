@@ -1,0 +1,16 @@
+{
+    "name": "LeapMotion.Core.Scripts.DataStructures.Editor",
+    "references": [
+        "LeapMotion"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}

@@ -1,8 +1,10 @@
 {
     "name": "Microsoft.MixedReality.Toolkit.Providers.LeapMotion",
     "references": [
-        "Microsoft.MixedReality.Toolkit"
+        "Microsoft.MixedReality.Toolkit",
+        "LeapMotion"
     ],
+    "optionalUnityReferences": [],
     "includePlatforms": [
         "Editor",
         "WindowsStandalone32",
@@ -13,7 +15,5 @@
     "overrideReferences": false,
     "precompiledReferences": [],
     "autoReferenced": true,
-    "defineConstraints": [],
-    "versionDefines": [],
-    "noEngineReferences": false
+    "defineConstraints": []
 }

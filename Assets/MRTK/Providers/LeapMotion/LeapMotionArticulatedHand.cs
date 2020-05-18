@@ -24,6 +24,8 @@ namespace Microsoft.MixedReality.Toolkit.LeapMotion.Input
     /// </summary>
     public class LeapMotionArticulatedHand : BaseHand
     {
+        protected override IHandRay HandRay { get; } = new LeapMotionHandRay();
+
         /// <summary>
         /// Constructor for a Leap Motion Articulated Hand
         /// </summary>

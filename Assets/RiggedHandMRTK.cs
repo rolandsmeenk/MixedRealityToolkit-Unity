@@ -23,11 +23,6 @@ namespace Leap.Unity
     /// <summary> A skinned and jointed 3D HandModel. </summary>
     public class RiggedHandMRTK : MonoBehaviour, IMixedRealityControllerVisualizer, IMixedRealitySourceStateHandler, IMixedRealityHandJointHandler
     {
-        // Hand to compare to
-        private RiggedHand LMHand;
-        public bool debug = true;
-        public TrackedHandJoint debugJoint = TrackedHandJoint.ThumbMetacarpalJoint;
-
         /** The number of fingers on a hand.*/
         public const int NUM_FINGERS = 5;
 
@@ -110,7 +105,7 @@ namespace Leap.Unity
 
         private void UpdateFingerSettings()
         {
-            var riggedFingers = GetComponentsInChildren<RiggedFinger>();
+            var riggedFingers = GetComponentsInChildren<RiggedFingerMRTK>();
             foreach (var finger in riggedFingers)
             {
                 finger.deformPosition = deformPositionsInFingers;

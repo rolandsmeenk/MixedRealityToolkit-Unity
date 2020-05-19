@@ -359,8 +359,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b068f7b2a41c69e478df6752cc22da46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LMHand: {fileID: 114994683550464134, guid: 7dcd9425d7f9c0646a84503bc9f46c75, type: 3}
-  debug: 0
+  debug: 1
+  debugJoint: 1
   fingers:
   - {fileID: 826339736972712317}
   - {fileID: 6147897765671543790}

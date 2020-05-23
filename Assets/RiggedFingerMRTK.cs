@@ -19,9 +19,6 @@ namespace Leap.Unity
         /** The number of bones in a finger. */
         public const int NUM_BONES = 4;
 
-        /** The number of joints in a finger. */
-        public const int NUM_JOINTS = 3;
-
         /** Bones positioned and rotated by FingerModel. */
         public Transform[] bones = new Transform[NUM_BONES];
 
@@ -104,6 +101,7 @@ namespace Leap.Unity
                 if (bones[i] != null)
                 {
                     bones[i].rotation = GetJointPose(i, eventData.InputData).Rotation * Reorientation();
+
                     if (deformPosition)
                     {
                         var boneRootPos = GetJointPose(i, eventData.InputData).Position;
@@ -147,36 +145,6 @@ namespace Leap.Unity
                 }
             }
             return largestIdx;
-        }
-
-        public void SetupRiggedFinger(bool useMetaCarpals)
-        {
-            findBoneTransforms(useMetaCarpals);
-            modelFingerPointing = calulateModelFingerPointing();
-        }
-
-        private void findBoneTransforms(bool useMetaCarpals)
-        {
-            if (!useMetaCarpals || fingerType == Finger.FingerType.TYPE_THUMB)
-            {
-                bones[1] = transform;
-                bones[2] = transform.GetChild(0).transform;
-                bones[3] = transform.GetChild(0).transform.GetChild(0).transform;
-            }
-            else
-            {
-                bones[0] = transform;
-                bones[1] = transform.GetChild(0).transform;
-                bones[2] = transform.GetChild(0).transform.GetChild(0).transform;
-                bones[3] = transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).transform;
-            }
-        }
-
-        private Vector3 calulateModelFingerPointing()
-        {
-            Vector3 distance = transform.InverseTransformPoint(transform.position) - transform.InverseTransformPoint(transform.GetChild(0).transform.position);
-            Vector3 zeroed = RiggedHand.CalculateZeroedVector(distance);
-            return zeroed;
         }
     }
 }

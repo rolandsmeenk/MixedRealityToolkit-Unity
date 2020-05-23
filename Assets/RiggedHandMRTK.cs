@@ -7,16 +7,13 @@
  * between Ultraleap and you, your company or other organization.             *
  ******************************************************************************/
 
-using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using Leap;
 using Leap.Unity.Attributes;
-using UnityEngine.Serialization;
+using Microsoft.MixedReality.Toolkit;
 using Microsoft.MixedReality.Toolkit.Input;
 using Microsoft.MixedReality.Toolkit.Utilities;
-using Microsoft.MixedReality.Toolkit;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Leap.Unity
 {
@@ -110,7 +107,6 @@ namespace Leap.Unity
             {
                 finger.deformPosition = deformPositionsInFingers;
                 finger.scaleLastFingerBone = scaleLastFingerBones;
-                finger.SetupRiggedFinger(useMetaCarpals);
             }
         }
 

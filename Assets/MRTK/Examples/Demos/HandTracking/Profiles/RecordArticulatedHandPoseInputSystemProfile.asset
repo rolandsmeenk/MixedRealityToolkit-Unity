@@ -82,7 +82,7 @@ MonoBehaviour:
     componentName: Leap Motion Device Manager
     priority: 0
     runtimePlatform: 17
-    deviceManagerProfile: {fileID: 11400000, guid: 54c86a228409e72499603ae95e1b41d8,
+    deviceManagerProfile: {fileID: 11400000, guid: d6ff053aacdb65d40aed070177d1a63b,
       type: 2}
   focusProviderType:
     reference: Microsoft.MixedReality.Toolkit.Input.FocusProvider, Microsoft.MixedReality.Toolkit.Services.InputSystem
@@ -94,14 +94,14 @@ MonoBehaviour:
     type: 2}
   inputActionRulesProfile: {fileID: 11400000, guid: 03945385d89102f41855bc8f5116b199,
     type: 2}
-  pointerProfile: {fileID: 11400000, guid: 57e986d6f9387a145a8016f91019d754, type: 2}
+  pointerProfile: {fileID: 11400000, guid: ad156e65c97b41d49a652b5f1a0d5382, type: 2}
   gesturesProfile: {fileID: 11400000, guid: bd7829a9b29409045a745b5a18299291, type: 2}
   speechCommandsProfile: {fileID: 11400000, guid: c6b131fcb30ab9943a3adcb064d65cd0,
     type: 2}
   enableControllerMapping: 1
   controllerMappingProfile: {fileID: 11400000, guid: 39ded1fd0711a0c448413d0e1ec4f7f3,
     type: 2}
-  controllerVisualizationProfile: {fileID: 11400000, guid: 27c8aa7e6f4d8be44b686cc11feee917,
+  controllerVisualizationProfile: {fileID: 11400000, guid: b0da409a02572ac419c4a0f430e38e4a,
     type: 2}
-  handTrackingProfile: {fileID: 11400000, guid: 7f1e3cd673742f94ca860ac7ae733024,
+  handTrackingProfile: {fileID: 11400000, guid: eefe43a2a11a40946939e21c608f9669,
     type: 2}

@@ -24,7 +24,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1124875446034661076}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -44,32 +44,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ba31feb4313cca4fbf5e8c3fc4803c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Palm: {fileID: 4890456473172772943}
   Wrist: {fileID: 0}
-  ThumbMetacarpalJoint: {fileID: 0}
-  ThumbProximalJoint: {fileID: 4890456473172772969}
-  ThumbDistalJoint: {fileID: 4890456473172772967}
-  ThumbTip: {fileID: 4890456473172772965}
-  IndexMetacarpal: {fileID: 0}
-  IndexKnuckle: {fileID: 0}
-  IndexMiddleJoint: {fileID: 0}
-  IndexDistalJoint: {fileID: 0}
-  IndexTip: {fileID: 0}
-  MiddleMetacarpal: {fileID: 0}
-  MiddleKnuckle: {fileID: 0}
-  MiddleMiddleJoint: {fileID: 0}
-  MiddleDistalJoint: {fileID: 0}
-  MiddleTip: {fileID: 0}
-  RingMetacarpal: {fileID: 0}
-  RingKnuckle: {fileID: 0}
-  RingMiddleJoint: {fileID: 0}
-  RingDistalJoint: {fileID: 0}
-  RingTip: {fileID: 0}
-  PinkyMetacarpal: {fileID: 0}
-  PinkyKnuckle: {fileID: 0}
-  PinkyMiddleJoint: {fileID: 0}
-  PinkyDistalJoint: {fileID: 0}
-  PinkyTip: {fileID: 0}
+  Palm: {fileID: 4890456473172772943}
+  ThumbMetacarpal: {fileID: 4890456473172772969}
+  IndexMetacarpal: {fileID: 4890456473172772953}
+  MiddleMetacarpal: {fileID: 4890456473172772935}
+  RingMetacarpal: {fileID: 4890456473172772945}
+  PinkyMetacarpal: {fileID: 4890456473172772929}
+  modelPalmAtLeapWrist: 1
+  deformPosition: 0
+  scaleLastFingerBone: 0
+  modelFingerPointing: {x: 0, y: -1, z: 0}
+  modelPalmFacing: {x: -1, y: 0, z: 0}
 --- !u!1 &4890456473173136387
 GameObject:
   m_ObjectHideFlags: 0
@@ -567,8 +553,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4890456473173136493}
-  m_LocalRotation: {x: 0.5074078, y: 0.49580476, z: -0.49969068, w: -0.49701533}
-  m_LocalPosition: {x: -0.009028681, y: -0.019746486, z: -0.15220052}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4890456473172772963}

@@ -323,7 +323,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4542260197562760}
-  - component: {fileID: 4904721469452694194}
+  - component: {fileID: 7522105656733517389}
   m_Layer: 0
   m_Name: LoPoly Rigged Hand Left MRTK
   m_TagString: Untagged
@@ -347,7 +347,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4904721469452694194
+--- !u!114 &7522105656733517389
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -356,19 +356,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 1137685427885016}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ba31feb4313cca4fbf5e8c3fc4803c3, type: 3}
+  m_Script: {fileID: 11500000, guid: b068f7b2a41c69e478df6752cc22da46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Wrist: {fileID: 4484374046729624}
-  Palm: {fileID: 4531056800117064}
-  ThumbMetacarpal: {fileID: 4570656256943866}
-  IndexMetacarpal: {fileID: 4599822919676468}
-  MiddleMetacarpal: {fileID: 4437985243979600}
-  RingMetacarpal: {fileID: 4830608005988508}
-  PinkyMetacarpal: {fileID: 4572308722735894}
+  fingers:
+  - {fileID: 826339736972712317}
+  - {fileID: 6147897765671543790}
+  - {fileID: 6699092714782697727}
+  - {fileID: 8334727026318901302}
+  - {fileID: 8968923864418230622}
+  palm: {fileID: 4531056800117064}
+  wristJoint: {fileID: 4484374046729624}
+  _deformPositionsInFingers: 1
+  _scaleLastFingerBones: 1
   modelPalmAtLeapWrist: 1
-  deformPosition: 1
-  scaleLastFingerBone: 1
+  useMetaCarpals: 1
   modelFingerPointing: {x: -1, y: 0, z: 0}
   modelPalmFacing: {x: 0, y: 1, z: 0}
 --- !u!1 &1238166340976364
